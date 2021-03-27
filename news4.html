@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.alert("You are viewing the property of © Gagan");</script>
+<title>News4</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 55%; /* IE10 */
+  flex: 55%;
+  background-color: white;
+  padding: 20px;
+}
+
+.rightside{
+-ms-flex:20%;
+flex:20%;
+ background-color:yellow;
+ flex-direction: column;
+padding: 10px;
+
+}
+
+.rightside > div{
+padding:5px;
+background-color:yellow;
+margin:10px;
+}
+
+
+.bottompanel {
+display: flex;
+flex-direction:column;
+flex-wrap: wrap;
+width: 100%;
+}
+.bottompanel >div{
+padding:20px;
+background-color:#FFE4B5;
+margin:10px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+   width=100%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.fa {
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+}
+.fa:hover {
+  color: darkblue;
+}
+h2 {font-size: 30px;}
+img{
+height: 100px;
+position: relative;
+}
+
+#animate{
+animation:shake 1.5s;
+animation-iteration-count: infinite;
+animation-delay:-1s;
+}
+@keyframes shake{
+0%{transform: translate(0px);}
+8%{transform: translate(10px);}
+16%{transform: translate(-5px);}
+24%{transform: translate(10px);}
+32%{transform: translate(-5px);}
+40%{transform: translate(10px);}
+48%{transform: translate(-5px);}
+52%{transform: translate(0px);}
+}
+
+</style>
+<img src="https://tse1.mm.bing.net/th?id=OIP.ioDuk3HIBL4wvchQy4jqbAHaHa&pid=Api&P=0&w=300&h=300" align="left">
+
+  <h1>#Stay safe Stay updated</h1>
+
+  <p>A website created by me</p>
+</div>
+<div class="navbar">
+  <a href="https://www.google.com">Google</a>
+  <a href="https://www.yahoo.com">Yahoo</a>
+  <a href="https://www.duckduckgo.com">DuckDuckGo</a>
+  <a href="https://www.bing.com" class="right">Bing</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h3>About Me</h3>
+    <h5>Photo of me:</h5>
+    <div>
+   <img src="https://qphs.fs.quoracdn.net/main-thumb-423536727-200-ndjjqmyooexbqgzrfuehqiwxtzxdsrok.jpeg" style=" height: 200px; width: 200px">
+    <p>&emsp;<b>Gagan Gupta</b></p>
+   </div>
+    <p>Hello Buddies! Welcome to my site. Please give your reviews</p>
+    <h3>More Text</h3>
+    <p></p>
+    <div class="fakeimg" style="height:60px;">Covid-19</div><br>
+    <div class="fakeimg" style="height:60px;">US President Donald Trump</div><br>
+    <div class="fakeimg" style="height:60px;">India's strategy to fight coronavirus</div>
+	</br></br></br>Hello Guys, Enjoy the the Sunday News.....it took quite a lot effort to reach it up to you
+	</br>Thanks for your support
+  </div>
+  
+  
+  <div class="main">
+  
+  <h5 id="s1"></h5>
+<script> document.getElementById("s1").innerHTML="You are viewing this page at: "+ Date();</script>
+
+  <p id="s2"></p>
+<script>
+document.getElementById("s2").innerHTML=getLocation();
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    document.getElementById("s2").innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  document.getElementById("s2").innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+</script>
+
+  
+    <h2 style="font-size: 50px"> </h2>
+    <h5>Description, May 10, 2020</h5>
+	<h2>&#128312; Kanpur: Villagers angry with officers wrote a new speech in lockdown, bridge built over river in four days</h2>
+    <img style="height:250px; width: 350px" src="https://spiderimg.amarujala.com/assets/images/2020/05/09/750x506/photo_1589044474.jpeg">
+<p>Frustrated with the administrative officers and public representatives in Baghauli area of ​​Hardoi, the villagers wrote a new text in lockdown. With mutual support, the people of village Masit and nearby villages of Ahirori development block got the raw bridge ready on the Say River.</p>
+<a href ="https://www.amarujala.com/uttar-pradesh/kanpur/hardoi-villagers-angry-with-officers-built-bridge-over-river-new-text-written-in-lockdown"> Read more</a>
+
+
+
+<h2>&#128312; Doctor First To Receive Plasma Therapy In UP Dies Of Heart Attack</h2>
+<p><b>Lucknow:</b> An Uttar Pradesh doctor, 58, who was the first COVID-19 patient to receive plasma therapy in the state, died of a heart attack on Saturday. His condition had improved drastically after receiving the treatment, a Lucknow hospital said in a statement, adding he tested negative for the virus on Saturday</br>
+"A 58-year-old, Orai-resident doctor was admitted in KGMU (King George Medical University) coronavirus ward. After the therapy, his lung condition had improved a lot. Unfortunately, he developed a urinary tract infection. He was treated for the condition, and was subjected to dialysis. His two samples were found to be coronavirus negative," the hospital said.</p>
+
+
+</br></br>
+<h2>&#128312;Military tension rising in South China Sea, China did maneuvers, America's fighter jet also ready</h2>
+<img style="height:300px; width:500px" src="https://static.langimg.com/thumb/msid-75573496,imgsize-1299101,width-540,height-300,resizemode-4/navbharat-times.jpg">
+<p>Tensions between China and the US (US China military tension) in the South China Sea are constantly increasing. The US (US) Defense Minister has alleged that China (China) is threatening its neighboring countries. China has also launched a fierce attack on America.</br>
+Tensions between the world's two superpowers China and the United States have been increasing over Washington / Beijing South China Sea. On the one hand, the US has accused that China's military is behaving aggressively in the South China Sea, while China has alleged that the Donald Trump administration is trying to provoke the atmosphere in view of the US presidential election. Amid increasing tension, Chinese warships have practiced war live. Meanwhile, the US has prepared its Brahmastra called F-35 fighter jet in alert mode in Alaska.
+Amid escalating tensions with China, US Defense Minister Mark Asper said on Tuesday that China's military was taking an aggressive stand in the South China Sea. He said that the 'Chinese Communist Party' has stepped up the campaign to spread false information to divert attention from accusations accusing him of the Corona virus and to improve its image.
+ </br>China's live exercises in South China Sea</br>
+Meanwhile, China has also stepped up its preparations in the event of any war with America. Chinese aircraft carriers, warships and combat airplanes have practiced war live. The Chinese military has said that they are ready for any war with America. Not only this, the planes that destroy China's submarine have also increased their patrol in the South China Sea. China has taken this step at a time when America is continuously sending its military ships to this area. US surveillance aircraft are also making regular visits to the area.
+</p>
+
+
+
+
+<h2>&#128312; Little Richard: Rock 'n' roll pioneer dies</h2>
+<img style="height:250px; width: 400px" src="https://ichef.bbci.co.uk/news/320/cpsprodpb/1145F/production/_112215707_84560bd7-af80-4200-8b68-1ba8b153b4e6.jpg">
+<h3>Pioneering rock 'n' roll singer Little Richard has died at the age of 87, the musician's family has confirmed.</h6>
+<p>Little Richard was born as Richard Wayne Penniman in 1932.
+
+He had his biggest hits in the 1950s and was known for his exuberant performances, shrieks, raspy voice and flamboyant outfits. He sold more than 30 million records worldwide.
+
+Paying tribute after news of his death emerged, former Beatles drummer Sir Ringo Starr tweeted: "God bless Little Richard, one of my all-time musical heroes."</br>Chic co-founder Nile Rodgers said it was "the loss of a true giant", while Brian Wilson of the Beach Boys said his music would "last forever".
+
+Richard's bass guitarist, Charles Glenn, told celebrity news website TMZ the singer had been ill for two months. He said Richard died at his home, with his brother, sister and son beside him.
+</br>Little Richard's hit Good Golly Miss Molly made the charts in 1958. Other well-known songs include Tutti Frutti and Long Tall Sally.
+
+The Beatles, Elton John and Elvis Presley all cited him an influence. The singer was inducted into the Rock and Roll Hall of Fame in 1986.
+
+He died of bone cancer in Tullahoma, Tennessee his family said.
+
+</br>
+
+<h2>&#128312;Brazil's Amazon: Surge in deforestation as military prepares to deploy</h2>
+<img style="height:250px; width:500px" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/1405B/production/_112211028_060403775.jpg">
+<h4>Deforestation in Brazil's Amazon rainforest rose sharply last month as the country prepared to send troops to try to curb illegal logging and mining.</h4>
+<p>Brazil's space research agency said the area destroyed in April was 64% bigger than in the same period last year.
+
+In the first four months of 2020, destruction of the forest by illegal loggers and ranchers rose 55%, it said.
+
+Environmentalists say President Jair Bolsonaro's policies and rhetoric encourage illegal activity.</br>
+Brazil's National Institute of Space Research (Inpe) said that more than 405 sq km (156 sq miles) of the Amazon had been deforested last month compared with 248 sq km in April last year.
+
+Between January and April, a total of 1,202 sq km was wiped out, it said.
+
+Conservation groups said that, since the coronavirus outbreak began, fewer government enforcement agents had been deployed.
+
+Brazil has been one of the worst-affected countries in South America, with 141,000 cases and nearly 10,000 deaths.</p>
+<p> See how the Amazon rainforests help to limit Global Warming &#128071;</p>
+<iframe width="650" height="500" frameborder="0" src="https://www.bbc.com/news/av/embed/p07gcvb8/52595030"></iframe>
+
+
+</br></br>
+<h2>&#128312; Queen tells Britain 'never give up' in tribute to WW2 generation</h2>
+<img style="height: 250px; width:350px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIKAZa_cthfTCNFHmLQLnDJ1r7usx3nAni8cvhgvxjgDv-CiHVR14Wu6SFqvn32TSWUYiGvb-u&usqp=CAI&s">
+<p>Queen Elizabeth led tributes to veterans of World War Two recalling the "never give up, never despair" message of Victory in Europe Day 75 years ago as the coronavirus damped commemorations for the end of the war on the continent. In a rare televised address that brought together the themes of wartime and the coronavirus, the 94-year-old monarch said those who had served during the conflict with Nazi Germany would admire how their descendants were coping with the lockdown imposed to curb the spread of the virus.</p>
+
+
+
+</br></br>
+<h2>&#128312; Coronavirus: Six killed in clashes at Afghanistan food aid protest</h2>
+<img style="height:250px; width:500px" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/7D97/production/_112215123_mediaitem112215119.jpg">
+<p>The violence began after demonstrators gathered in Firozkoh, the capital of Ghor province, to complain about the perceived failure to help the poor during the coronavirus pandemic.
+
+Gunmen in the crowd attacked a government office, prompting security forces to open fire, the interior ministry says.
+
+Two policemen and four civilians died.
+
+Local volunteer radio presenter Ahmadkhan Nawid was among those killed, according to the Afghanistan Journalists' Centre.
+
+Nine civilians and ten police officers were also injured, the interior ministry said.
+
+The human rights group Amnesty International called for an independent and effective investigation into what it said was the "use of unnecessary and excessive force" that led to the killing of the civilians.
+</br>The chairwoman of the Afghanistan Independent Human Rights Commission told Reuters news agency that in the past week it had received complaints that food aid was being distributed unfairly.
+
+"We hear repeated complaints from people that the ones who are receiving the limited aid that is there are not the ones that are most deserving, they are the ones who have connections to local authorities or local officials," Shaharzad Akbar said.</p>
+</br></br>
+
+<h2>&#128312; Mother's Day 2020: Kangana Ranaut dedicates a beautiful poem to her mother; read it</h2>
+<p>With more and more Bollywood celebs taking to social media to interact with their fans amidst the lockdown phase, Kangana Ranaut to Instagram to pour her heart out with a special message which she dedicated to her mother.</p>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/B_-J3chlOMR/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B_-J3chlOMR/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; 
+margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; 
+transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/B_-J3chlOMR/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">#KanganaRanaut pens down this beautiful poem on the account of Mother&#39;s Day. Here, she dedicates some beautiful words as gift to her mother and all the mothers in the world. Happy Mother&#39;s Day. ♥️ . . . #mothersday #happymothersday</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/team_kangana_ranaut/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Kangana Ranaut</a> (@team_kangana_ranaut) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-05-09T14:53:12+00:00">May 9, 2020 at 7:53am PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+
+
+
+<h2>&#128312; Astronomers find huge success, find black hole closest to Earth</h2>
+
+<img style="height: 350px; width: 600px" src="https://hindi.cdn.zeenews.com/hindi/sites/default/files/2020/05/07/553723-black-hole.jpg">
+<p><b>Washington:</b> Astronomers have found the nearest black hole to Earth. It is so close to the earth that two stars dancing with it can be seen without binoculars. European Southern Observatory astronomer Thomas Rivinius said that this black hole is about a thousand light years away from Earth.
+
+The distance of one light year is equal to nine and a half thousand billion kilometers, but in the context of the universe, even the galaxy, this black hole is our neighbor. Rivinius led the team associated with this discovery. 
+
+</br>The study related to this astronomical discovery was published in the journal 'Astronomy and Astrophysics' on Wednesday. Prior to this, the nearest black hole found on Earth is about three times that is 3,200 years away. The director of the Harvard Black Hole Initiative, AV Loeb, said that there is also a possibility of black holes that are closer to the Earth than this black hole.</p>
+  
+
+</br></br>
+<p style="font-size:20px">Like this page &nbsp;
+<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+2K&emsp;
+<i onclick="myFunction2(this)" class="fa fa-thumbs-down"></i>
+34
+</p>
+<script>
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+
+<script>
+function myFunction2(x) {
+  x.classList.toggle("fa-thumbs-up");
+}
+</script>
+
+<p style="font-size:50px; background-color: #00FF00; text-align: center">Some More News</p>
+
+</div>
+
+
+<div class="rightside">
+<h2 style="font-size:25px; color:red; text-align:center"><b><u>HIGHLIGHTS</b></u></h2>
+<div>
+<img style="height: 150px; width:170px; position: relative;r" src="data:image/png;base64,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">
+<p><div id="animate">&#128073;</div> <a href="http://up.gov.in/">UP News live</a></p>
+<p><div id="animate">&#128073;</div> <a href="https://kanpurnagar.nic.in/">Kanpur Nagar live</a></p>
+</div>
+
+<div>
+<p><div id="animate">&#128073;</div> 
+<img style="float: left; height: 120px;padding:10px" src="https://www.hindustantimes.com/rf/image_size_90x90/HT/p2/2020/05/09/Pictures/_bb6c8bd4-91fe-11ea-80d7-183d6ba34199.jpg">
+</br>
+<a href="https://www.hindustantimes.com/bollywood/mother-s-day-2020-from-aishwarya-rai-to-kareena-kapoor-check-out-pics-of-these-bollywood-moms-and-their-kids/story-REII5PqPOZ1FZSOv7HFZpM.html">Mother's Day 2020: check out pics of these Bollywood moms and their kids</a>
+</br></br></br></br></div>
+
+<div>
+<p><div id="animate">&#128073;</div>
+<img style="float:left; padding:10px; height:120px" src="https://www.hindustantimes.com/rf/image_size_90x90/HT/p2/2020/05/09/Pictures/_f4ecebbe-920e-11ea-b214-efce58d4f976.jpg"></p>
+<a href="https://www.hindustantimes.com/india-news/nsa-ajit-doval-dissects-pak-terror-moves-at-kashmir-meet-briefs-amit-shah/story-mxLjtmBl3Qe1Db2zEleSTM.html"> Ajit Doval dissects  Imran Khan’s terror  moves in Kashmir,  preps India’s counter</a>
+</br></br></br></br></div>
+
+<div>
+<p><div id="animate">&#128073;</div> 
+<img style="float: left; height: 120px;padding:10px" src="https://www.hindustantimes.com/rf/image_size_90x90/HT/p2/2020/05/09/Pictures/departs-india-flight-carry-delhi-indian-nationals_355204fe-921f-11ea-b214-efce58d4f976.jpg">
+<a href="https://www.hindustantimes.com/india-news/evacuation-of-indians-stranded-in-us-begins-2-000-to-return-in-first-leg/story-cJ5xfnfEHqXPNCtwab3OeK.html">Evacuation of Indians stranded in US begins, 2,000 to return in first leg</a>
+</br></br></br></br></div>
+
+<div>
+<p><div id="animate">&#128073;</div> 
+<img style="float: left; height: 120px;padding:10px" src="https://www.hindustantimes.com/rf/image_size_90x90/HT/p2/2020/05/09/Pictures/border-chinook-helicopter-carries-equipments-organisation-gunji_13b62392-9211-11ea-b24e-c3981487abe8.jpg">
+<a href="https://www.hindustantimes.com/india-news/india-rejects-nepal-s-protest-against-new-road-to-lipulekh/story-MuYdyt9t6jbrZgxCbpMfwO.html">India rejects Nepal’s protest against new road to Lipulekh</a>
+</br></br></br></br>
+</div>
+
+<div>
+<p><div id="animate">&#128073;</div> 
+<img style="float: left; height: 130px; width:130px ;padding:10px" src="https://www.hindustantimes.com/rf/image_size_90x90/HT/p2/2020/05/10/Pictures/_1c3b38fe-9234-11ea-b24e-c3981487abe8.jpeg">
+<a href="https://www.hindustantimes.com/chandigarh/property-tax-1-lakh-assessees-in-chandigarh-to-get-advance-notices-by-may-end/story-QWLbPmSHWxUWxMIKO0e3kM.html">Property tax: 1 lakh assessees in Chandigarh to get advance notices by May end</a>
+</br></br></br></br></br>
+</div>
+
+<div>
+<p><div id="animate">&#128073;</div> 
+<img style="float: left; height: 120px;padding:10px" src="https://www.hindustantimes.com/rf/image_size_90x90/HT/p2/2020/05/10/Pictures/central-meeting-minister-directors-general-chairing-review_5062819e-9231-11ea-b214-efce58d4f976.jpg">
+<a href="https://www.hindustantimes.com/india-news/i-am-perfectly-healthy-says-amit-shah-on-health-rumours/story-U9fso2fABjk0q1IL0jSAcI.html">‘I am perfectly healthy’, says Amit Shah on health rumours</a>
+</br></br></br></br></br>
+</div>
+
+<div>
+<p><div id="animate">&#128073;</div> 
+<img style="float: left; height: 120px; width:130px; padding:10px" src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2020/05/09/Pictures/_b3deb53e-91c9-11ea-b24e-c3981487abe8.jpg">
+<a href="https://www.hindustantimes.com/bollywood/making-of-ramayan-how-sunil-lahri-injured-his-fingers-dipika-chikhlia-spent-days-sitting-under-a-tree/story-2dRjeXcDROaOouNC1UiFaK.html">Making of Ramayan: How Sunil Lahri injured his fingers, Dipika Chikhlia spent days sitting under a tree</a>
+</br></br></br>
+</div>
+
+
+</div>
+</div>
+
+<div class="main">
+<div class="bottompanel">
+
+<div>
+<img style="float: left; height: 180px; width:300px; padding:10px" src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2020/05/10/Pictures/_565b68f4-923b-11ea-b214-efce58d4f976.jpg">
+</br><a href="https://www.hindustantimes.com/world-news/fire-breaks-out-at-moscow-coronavirus-hospital-one-dead/story-qU3twM2wuKrtTcFqSTc23M.html">Fire breaks out at Moscow coronavirus hospital, one dead</a>
+</br></br>The emergency ministry told the RIA news agency that the blaze erupted in a patient’s room, without providing further details. The fire has since been put out, the authorities said.
+</br></br><i> May 10, 2020 02:56</i>
+</div>
+
+<div>
+<img style="float: left; height: 180px; width:300px; padding:10px" src="https://www.hindustantimes.com/rf/image_size_300x169/HT/p2/2020/05/10/Pictures/belongings-aurangabad-district-victims-sleeping-scattered-railway_9e54c4a6-9237-11ea-b214-efce58d4f976.jpg">
+</br><a href="https://www.hindustantimes.com/india-news/aurangabad-train-tragedy-bodies-of-16-labourers-brought-home-to-mp/story-y60VHfkLg6CpXbxjTfrCjJ.html">Aurangabad train tragedy: Bodies of 16 labourers brought home to MP</a>
+</br></br>The bodies of the 16 labourers, who were run over by a freight train near Maharashtra’s Aurangabad on Friday, were brought to their native Madhya Pradesh on a special train on Saturday.
+</br></br><i> May 10, 2020 02:27</i>
+</div>
+
+<div>
+<img style="float: left; height: 180px; width:300px; padding:10px" src="https://www.hindustantimes.com/rf/image_size_300x169/HT/p2/2020/05/10/Pictures/outbreak-the-coronavirus-disease-covid-outskirts-kolkata_ea772e48-9235-11ea-b214-efce58d4f976.jpg">
+</br><a href="https://www.hindustantimes.com/india-news/indian-test-kit-production-scaled-up-to-lower-imports/story-W4EUSEvoQqCJnRHHGmC10K.html">Indian Covid-19 test kit production scaled up to lower imports</a>
+</br></br>India is currently testing 75,000-80,000 samples a day through the reverse transcriptase polymerase chain reaction (RT-PCR) test, the gold standard for confirming Covid-19 cases , and has set itself a target of testing at least 100000 samples per day by the end of May.
+</br></br><i>May 10, 2020 02:16 </i>
+</div>
+
+<div>
+<img style="float: left; height: 180px; width:300px; padding:10px" src="https://www.hindustantimes.com/rf/image_size_300x169/HT/p2/2020/05/10/Pictures/delhi-lockdown-covid-19-day-46_e0a9005a-922e-11ea-b214-efce58d4f976.jpg">
+</br><a href="">India’s coronavirus cases hit 60,000, fatalities exceed 2,000</a>
+</br></br>The highest number of cases continued to be detected from Maharashtra, Gujarat, Tamil Nadu and Delhi, with the national capital reporting a lower-than-usual number as officials changed the classification of the 24-hour period.
+</br></br><i>May 10, 2020 01:25</i>
+</div>
+
+<div>
+<img style="float: left; height: 180px; width:300px; padding:10px" src="https://www.hindustantimes.com/rf/image_size_300x169/HT/p2/2020/05/10/Pictures/ministers-minister-narendra-during-covid19-wearing-conferencing_3f4c7dda-9225-11ea-b214-efce58d4f976.jpg">
+</br><a href="https://www.hindustantimes.com/india-news/reviving-economy-in-covid-fight-to-top-agenda-of-pm-meet/story-yNuRc1T3pDWESmm7150JOI.html">Reviving economy in Covid-19 fight to top agenda of PM meet</a>
+</br></br>Prime Minister Narendra Modi may meet chief ministers as early as Tuesday, May 12, to discuss the next stage in the exit from the nationwide lockdown enforced to fight the spread of the coronavirus disease (Covid-19), government officials familiar with the matter said.
+</br></br><i>May 10, 2020 00:17</i>
+</div>
+
+<div>
+<img style="float: left; height: 180px; width:300px; padding:10px" src="https://www.hindustantimes.com/rf/image_size_300x169/HT/p2/2020/05/09/Pictures/gadget-show-diversity-ivanka-trump_206b46d0-91cb-11ea-80d7-183d6ba34199.jpg">
+</br><a href="https://www.hindustantimes.com/world-news/ivanka-trump-s-personal-assistant-tests-positive-for-coronavirus/story-JiREHIrA0UStKqi41DGCxN.html">Ivanka Trump’s personal assistant tests positive for coronavirus</a>
+</br></br>The White House is now making sure staffers wear masks in the White House residence, and coronavirus tests and temperature checks are being boosted throughout the West Wing.
+</br></br><i>May 09, 2020 13:32 </i>
+</div>
+</div>
+</div>
+
+<div class="footer">
+  <h2>&copy; Gagan & Co.</h2>
+</div>
+
+</body>
+</html>
