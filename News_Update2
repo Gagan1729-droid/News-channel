@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>News</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+   width=100%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.fa {
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+}
+.fa:hover {
+  color: darkblue;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<style>
+img{
+height: 100px;
+position: relative;
+
+}
+</style>
+<img src="https://tse1.mm.bing.net/th?id=OIP.ioDuk3HIBL4wvchQy4jqbAHaHa&pid=Api&P=0&w=300&h=300" align="left">
+
+  <h1>#Stay safe Stay updated</h1>
+
+  <p>A website created by me</p>
+</div>
+<div class="navbar">
+  <a href="https://www.google.com">Google</a>
+  <a href="https://www.yahoo.com">Yahoo</a>
+  <a href="https://www.duckduckgo.com">DuckDuckGo</a>
+  <a href="https://www.bing.com" class="right">Bing</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div>
+   <img src="https://tse4.mm.bing.net/th?id=OIP.mIpBWWirfgcm-TSSt56JogHaFj&pid=Api&P=0&w=207&h=156" height="100%">
+    <p>&emsp;<b>Gagan Gupta</b></p>
+   </div>
+    <p>Hello Buddies! Welcome to my site. Please give your reviews</p>
+    <h3>More Text</h3>
+    <p></p>
+    <div class="fakeimg" style="height:60px;"><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen">Covid-19</a></div><br>
+    <div class="fakeimg" style="height:60px;" ><a href="https://edition.cnn.com/specials/politics/president-donald-trump-45">US President Donald Trump</a></div><br>
+    <div class="fakeimg" style="height:60px;" >
+    <a href="https://mygov.in/covid-19/">India's strategy to fight coronavirus</a></div>
+  </div>
+  <div class="main">
+<h5 id="s1"></h5>
+<script> document.getElementById("s1").innerHTML="You are viewing this page at: "+ Date();</script>
+
+
+<p id="s2"></p>
+
+<script>
+document.getElementById("s2").innerHTML=getLocation();
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    document.getElementById("s2").innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  document.getElementById("s2").innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
+    <h2 style="font-size: 40px">&#9899; Kanpur Nagar Latest news</h2>
+     <img style=" height: 450px; width: 700px" src="https://cdn.s3waas.gov.in/s31700002963a49da13542e0726b7bb758/uploads/2020/03/2020032956-1024x512.jpeg">
+     <p>To find out daily updates of cases of coronavirus in Kanpur <a href="https://cdn.s3waas.gov.in/s31700002963a49da13542e0726b7bb758/uploads/2020/04/20200430100.pdf">Click</a></p>
+    </br>
+    
+ 
+
+ <h2 style="font-size: 40px">&#9899; Mumbai Police uses Harry Potter scenes to ask people to stay at home</h2>
+
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/B_rHXFPFAmf/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B_rHXFPFAmf/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/B_rHXFPFAmf/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">You already know Hermione&#39;s reaction if you step out unnecessarily during the lockdown. Just #StayHome magical folks of Mumbai to win &#39;The Battle&#39; against corona #BattleOfMumbaikars</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/mumbaipolice/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Mumbai Police</a> (@mumbaipolice) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-05-02T05:26:36+00:00">May 1, 2020 at 10:26pm PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+</br>
+
+<h2 style="font-size: 40px">&#9899;Delhi students stranded in Kota to arrive today</h2>
+<p>The buses sent by the Delhi government to bring back around 800 Delhi students stranded in Kota will arrive early morning on Sunday.
+
+Aam Aadmi Party leader, Satya Prakash Dubey said in a tweet: "Buses sent to Kota for bringing back the Delhi Students have left Kota for Delhi. Buses are expected to reach Kashmiri Gate at 5 in the morning. Students will be screened medically, after that DTC buses will drop them at their homes."
+
+Around 40 buses of the Delhi Transport Coporation had reached Kota on Saturday morning to bring back the students. The buses will follow social distancing measures in their seating arrangements.
+
+The buses will have a team of doctors and officials who will accompany the students.</p>
+
+
+<h2 style="font-size: 40px">&#9899;Boris Johnson says doctors had plan in case he died of Covid-19</h2>
+<img style="height: 200px; width: 400px" src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2020/05/03/Pictures/london-mayor-boris-johnson_65a82778-8ccf-11ea-8bae-d48e751bd032.jpg">
+<p>Doctors treating Boris Johnson for coronavirus prepared to announce his death after he was taken to intensive care, the British prime minister said on Sunday, in his first detailed comments about his illness.
+
+“It was a tough old moment, I won’t deny it,” he was quoted as saying by the Sun on Sunday newspaper in an interview. “They had a strategy to deal with a ‘death of Stalin’-type scenario.
+
+“I was not in particularly brilliant shape and I was aware there were contingency plans in place. The doctors had all sorts of arrangements for what to do if things went badly wrong.”
+
+Johnson, 55, first announced he had contracted Covid-19 on March 27 but maintained he had only mild symptoms. Yet he failed to shake the illness after a week of self-isolation.</p>
+<p>Johnson said the experience had made him more determined to fight the disease and get the country back to normal. He said he would announce a “roadmap” towards easing the lockdown restrictions imposed in late March later this week.</p>
+
+
+
+
+ <h2 style="font-size: 40px">&#9899;WHO assures that the virus has 'natural origin'</h2>
+<img style= "height: 200px; width: 400px" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202005/Dr_Michael_Ryan-770x433.jpeg?KzkI3APxzg5UvxfPeryccZDO1BdZGK1i">
+
+<p>World Health Organization Health Emergencies Programme Director Michael Ryan reiterated that the group believes the novel coronavirus is "natural in origin."
+
+Dr Michael Ryan responded Friday to comments by US President Donald Trump, who said he has seen information that the virus may have emerged from a virology institute in China.
+
+Ryan said WHO teams have listened "again and again" to many scientists who have looked at the gene sequences and the virus, "and we are assured that this virus is natural in origin."
+
+Ryan said it was important to establish the natural host of the virus, which could help pave the way for a better understanding of it and ways to prevent and respond to future outbreaks.
+
+On Thursday, Trump suggested he was confident that China's Wuhan Institute of Virology was at the origin of the coronavirus, before again criticizing WHO's early response to the outbreak.
+
+Most scientists believe the virus emerged at a market in the Chinese city, linked to an animal that has not yet been identified.
+
+The WHO's Emergency Committee on the Covid-19 outbreak recommended Friday that the outbreak remains an international public health emergency, its highest level of alert.</p>
+    
+
+<h2 style="font-size: 40px">&#9899;Donald Trump says ‘glad’ Kim Jong Un ‘is back, and well’</h2>
+<img style="height: 250px; width: 500px" src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2020/05/03/Pictures/donald-trump-kim-jong-un_0775b456-8ccd-11ea-8bae-d48e751bd032.jpg">
+<p>US President Donald Trump said Saturday he was “glad” about the reappearance of Kim Jong Un and that the North Korea leader is apparently healthy.
+
+“I, for one, am glad to see he is back, and well!” Trump tweeted, following Kim’s first public appearance in nearly three weeks after intense speculation that he was seriously ill or possibly dead.
+
+North Korean state television showed Kim walking, smiling broadly and smoking a cigarette at what the North said was the opening of a fertilizer factory on Friday in Sunchon, north of Pyongyang.
+
+Rumors about Kim’s health have been swirling since his conspicuous no-show at April 15 celebrations for the birthday of his grandfather, the North’s founder -- the most important day in the country’s political calendar.</p>
+
+<p>His absence triggered a series of fevered rumors and unconfirmed reports over his condition.
+
+Kim’s disappearance from public view came as Pyongyang’s talks with Washington over the North’s nuclear arsenal are at a standstill, despite three meetings between Kim and Trump.
+
+If Kim had been incapacitated or dead, it would have increased uncertainty over the process.
+
+Trump had downplayed reports of Kim’s poor health and possible demise.</p>
+
+
+
+<h2 style="font-size: 40px">&#9899;Lockdown 3.0: Impact on schools, colleges, board exams and entrance exams</h2>
+<p>Coronavirus lockdown 3.0: Attention students, as per the latest updates, the coronavirus lockdown has been extended till May 17, 2020. The Pan-India lockdown was scheduled to end on May 3, 2020, however, as per the decision taken by the MHA, the lockdown has been extended till May 17, 2020. This means that schools, colleges, institutes, coaching centers across the country will also remain shut till May 17, 2020. Board exams are further postponed which will lead to further postponement of results.</p>
+<a href="https://www.indiatoday.in/education-today/news/story/coronavirus-lockdown-3-0-impact-on-schools-colleges-board-exams-and-entrance-exams-1673413-2020-05-01">Impact of coronavirus on education sector</a>
+</br>
+
+<h2 style="font-size: 40px">&#9899;Nasiruddin Shah rubbishes hospitalisation news, says he's just fine</h2>
+<p>fter the sudden deaths of actors Irrfan Khan and Rishi Kapoor, the news of Naseeruddin Shah being admitted to a hospital began surfacing on social media.
+
+On Thursday evening, there were numerous online rumours that Shah had been hospitalised due to some illness.
+
+However, Shah's wife, actress Ratna Pathak Shah confirmed to us that he was doing absolutely fine.
+
+"We are all just fine, thanks," Ratna Pathak said.
+
+Their son Vivan Shah also dismissed the rumours as "untrue." "It's not true at all. He is all right. They are just rumours. He is fine," Vivan told us.
+
+Shah himself took to his official Facebook account to dispel the hospitalisation rumours.</p>
+
+<p><iframe style="border: none; overflow: hidden;" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fofficialnaseer%2Fposts%2F837384436753306&amp;width=500" width="500" height="173" frameborder="0" scrolling="no"></iframe>
+</p>
+
+<h2 style="font-size: 40px">&#9899;Meanwhile Bollywood remembers Rishi Kapoor and Irrfan Khan</h2>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/Rxmu0J6GajQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<p style="font-size:20px">Like this page &nbsp;
+<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+2K&emsp;
+<i onclick="myFunction2(this)" class="fa fa-thumbs-down"></i>
+34
+</p>
+<script>
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+
+<script>
+function myFunction2(x) {
+  x.classList.toggle("fa-thumbs-up");
+}
+</script>
+
+
+</div>
+</div>
+
+<div class="footer">
+  <h2>© Gagan & Co.</h2>
+</div>
+
+</body>
+</html>
