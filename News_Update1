@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>News</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+   width=100%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<style>
+img{
+height: 100px;
+position: relative;
+
+}
+</style>
+<img src="https://tse1.mm.bing.net/th?id=OIP.ioDuk3HIBL4wvchQy4jqbAHaHa&pid=Api&P=0&w=300&h=300" align="left">
+
+  <h1>#Stay safe Stay updated</h1>
+
+  <p>A website created by me</p>
+</div>
+<div class="navbar">
+  <a href="https://www.google.com">Google</a>
+  <a href="https://www.yahoo.com">Yahoo</a>
+  <a href="https://www.duckduckgo.com">Duck</a>
+  <a href="https://www.bing.com" class="right">Bing</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div>
+   <img src="https://tse4.mm.bing.net/th?id=OIP.mIpBWWirfgcm-TSSt56JogHaFj&pid=Api&P=0&w=207&h=156" height="100%">
+    <p>&emsp;<b>Gagan Gupta</b></p>
+   </div>
+    <p>Hello Buddies! Welcome to my site. Please give your reviews</p>
+    <h3>More Text</h3>
+    <p></p>
+    <div class="fakeimg" style="height:60px;">Covid-19</div><br>
+    <div class="fakeimg" style="height:60px;">US President Donald Trump</div><br>
+    <div class="fakeimg" style="height:60px;">India's strategy to fight coronavirus</div>
+  </div>
+  <div class="main">
+    <h2 style="font-size: 50px">Irrfan Khan dies at 54</h2>
+    <h5>Description, Apr 29, 2020</h5>
+    <div>
+    <img src="https://c.ndtvimg.com/2020-04/l58lf32g_irrfan-khan_120x90_30_April_20.jpg">
+    <img src="https://c.ndtvimg.com/2020-04/6c1imv98_irrfan-khan_120x90_30_April_20.jpg">
+    <img src="https://c.ndtvimg.com/2020-04/fhhqr7v_irrfan-khan_120x90_29_April_20.jpg">
+    <img src="https://c.ndtvimg.com/2020-04/vqf0p7m_freida_120x90_29_April_20.jpg">
+    <img src="https://c.ndtvimg.com/2020-04/jf2uuo4g_irrfan-khan-instagram_120x90_29_April_20.jpg">
+    </div>
+    <p style="font-size: 25px">Irrfan Khan battled a tumour for several months and returned to Mumbai some months ago after being treated in London. He died at Mumbai's Kokilaben Dhirubhai Ambani Hospital where he was being treated for a colon infection.</p>
+    
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pllZKDlxwhc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p style="font-size: 22px">Born on January 7, 1966 as Sahabzade Irfan Ali Khan in Jaipur, Irrfan was pursuing his MA degree when he earned a scholarship to study at National School of Drama. After NSD, Irrfan moved to Mumbai to pursue his passion and went on to appear in a slew of well-known shows at the time like Chanakya, Bharat Ek Khoj, Banegi Apni Baat, Chandrakanta, Star Bestsellers among more.
+
+     Irrfan made his screen debut in the 1988 Mira Nair directorial Salaam Bombay. After struggling for many years, success finally came to him after he starred in Asif Kapadia’s The Warrior (2001). The actor went on to star in several acclaimed films such as Haasil, Maqbool, Life in a Metro, Paan Singh Tomar, The Lunchbox, Haider, Piku and Talvar. Irrfan was also known for his work in international projects like The Namesake, The Darjeeling Limited, Slumdog Millionaire, Life of Pi and Jurassic World among more.
+     </p>    
+ <h2>Condolences flood throughout the country</h2>
+    <h5 id="s1">"></h5>
+<script> document.getElementById("s1").innerHTML="Description: "+ Date();</script>
+    <div>
+ <p> As India mourns the death of Irrfan Khan, people from all walks of life paid tribute to the extraordinary actor. Irrfan Khan, who was admitted to Mumbai's Kokilaben Dhirubhai Ambani Hospital with a colon infection, died on Wednesday afternoon. He was 53. The Piku star battled a tumour for several months and returned to Mumbai some months ago after being treated in London.</p>
+   
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Irrfan Khan’s demise is a loss to the world of cinema and theatre. He will be remembered for his versatile performances across different mediums. My thoughts are with his family, friends and admirers. May his soul rest in peace.</p>&mdash; Narendra Modi (@narendramodi) <a href="https://twitter.com/narendramodi/status/1255417621295570948?ref_src=twsrc%5Etfw">April 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Irfan Khan was a versatile actor. Sorry to hear about his demise. My heartfelt condolences to his family, friends and fans. Om Shanti</p>&mdash; Prakash Javadekar (@PrakashJavdekar) <a href="https://twitter.com/PrakashJavdekar/status/1255385880526807041?ref_src=twsrc%5Etfw">April 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+  
+
+<p style ="font-size: 25px">
+See more</p>
+</br>
+<div class="side">
+<img src="https://www.thehindubusinessline.com/migration_catalog/306ic4/article19348038.ece/alternates/PORTRAIT_355/BL23Worldrecession2" height="50px">
+</br>
+<a href="https://www.thehindubusinessline.com/economy/world-economy-will-go-into-recession-with-likely-exception-of-india-china-un/article31214695.ece?utm_source=taboola&utm_medium=referral#">World economy will go under recession</a>
+</div>
+ 
+</div>
+</div>
+<div class="footer">
+  <h2>© Gagan & Co.</h2>
+</div>
+
+</body>
+</html>
